@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+	<title>M25 Cobham - Find Us</title><!-- Motorway Official Icon -->
+	<link href="../images/UK-Motorway-Site_Icon.ico" rel="shortcut icon">
+	<!-- Main Website Layout CSS -->
+	<link href="../styles/StyleSheet-Layout.css" rel="stylesheet" type=
+	"text/css"><!-- Fancy Pop out Window CSS -->
+	<link href="../js/fancy-box/source/jquery.fancybox.css" media="screen" rel=
+	"stylesheet" type="text/css">
+	<!-- Add jQuery library for Highlight Function -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+	type="text/javascript"></script>
+	<script src="../js/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!-- site wrapper starts -->
+
+
+	<div id="wrapper">
+		<div id="header">
+			<form action="" id="search" method="get" name="search">
+				<input id="text-search" maxlength="120" name="q" placeholder=
+				"Search our website" size="40" type="text">
+			</form>
+			<a href="../index.html" id="logo"></a>
+
+			<div id="banner">
+				<p>M25 Cobham Services</p>
+			</div>
+
+
+			<div id="topnav">
+				<ul>
+					<li style="background-image:url(../images/btnHome.png);">
+						<a href="../index.html">Home</a>
+					</li>
+
+
+					<li>
+						<a href="accommodation.html">Accommodation</a>
+					</li>
+
+
+					<li>
+						<a href="facilities.html">Facilities</a>
+					</li>
+
+
+					<li>
+						<a href="find_us.html">Find Us</a>
+					</li>
+
+
+					<li>
+						<a href="contact_us.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="ColMainContent4">
+			<h2>Follow the directions below, and do not hesitate to explore the
+			interiors of our locations, for a real taste of the place -
+			Enjoy!</h2>
+			<iframe align="middle" frameborder="0" height="430" scrolling="no"
+			src=
+			"https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2494.282376280765!2d-0.408504!3d51.305929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCobham+Motorway+Service+Area+M25+Cobham+Surrey+KT11+3DB!5e0!3m2!1sen!2suk!4v1401997863265"
+			style="border:0" width="610"></iframe>
+			<p class="inset">Road: M25 between J9 and J10<br>
+			<br>
+			Address:<br>
+			Cobham Motorway Service Area M25<br>
+			Cobham<br>
+			Surrey<br>
+			KT11 3DB
+            </p>
+
+
+			<div style="text-align: center">
+			  <iframe align="middle" frameborder="0" height="430" scrolling=
+				"no" src=
+				"https://maps.google.co.uk/maps?cbll=51.304949,-0.406824&amp;layer=c&amp;panoid=csqD-d5gsWkAAAQWtNrsNQ&amp;cbp=13,192,,0,0&amp;ie=UTF8&amp;t=m&amp;source=embed&amp;ll=51.252139,-0.406837&amp;spn=0.184801,0.545883&amp;z=11&amp;output=svembed"
+				width="940"></iframe>
+			</div>
+		</div>
+	</div>
+	<!-- site wrapper ends -->
+
+
+	<div id="footer">
+		<div id="footer-inner-left">
+			<p>&copy;2014 Motorway Services Online, All Rights Reserved.<br>
+			Website By: Andrea Enning</p>
+		</div>
+
+
+		<div id="footer-inner-right">
+			<h2>Follow us on:</h2>    
+          <a href="http://www.youtube.com/user/HighwaysAgency/search?query=M25" title="Highways Agency - M25 Video Documentation" target="_blank">
+          <div class="Youtube">
+          </div>
+          </a> 
+          <a href="https://twitter.com/search/?q=%23M25" title="Twitter #M25" target="_blank">
+          <div class="Twitter">
+          </div>
+          </a> 
+          <a href="https://www.facebook.com/pages/Cobham-Services/478668838833682" title="Facebook Official Page" target="_blank">
+          <div class="Facebook">
+          </div>
+          </a> 
+          <a href="https://foursquare.com/v/extra-services-cobham/5124aa63d63e8c99b7feb9ac" title="Fourquare - Discover New Places" target="_blank">
+          <div class="Foursquare">     
+          </div>
+          </a> 
+          <a href="https://plus.google.com/117530011481998598526/about" title="Google+ - Days Inn Cobham M25" target="_blank">
+          <div class="GooglePlus">
+          </div>
+          </a>
+		</div>
+	</div>
+	<script src="../js/highlight.js" type="text/javascript"></script> 
+<!-- Javascript to clear search box's text when the field is clicked etc -->
+	 <script type="text/javascript">
+	$(function () {
+			$('#text-search').bind('keyup change', function (ev) {
+				// pull in the new value
+				var searchTerm = $(this).val();
+
+				// remove any old highlighted terms
+				$('body').removeHighlight();
+
+				// disable highlighting if empty
+				if (searchTerm) {
+					// highlight the new term
+					$('body').highlight(searchTerm);
+				}
+			});
+		});
+	</script>
+</body>
+</html>

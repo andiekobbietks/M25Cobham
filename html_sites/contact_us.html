@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+	<title>M25 Cobham - Contact Us</title>
+    
+    <!-- Motorway Official Icon -->
+	<link href="../images/UK-Motorway-Site_Icon.ico" rel="shortcut icon">
+    
+	<!-- Main Website Layout CSS -->
+	<link href="../styles/StyleSheet-Layout.css" rel="stylesheet" type="text/css">
+    
+    <!-- Main Website Layout CSS -->
+    <link href="../styles/StyleSheet-ContactForm.css" rel="stylesheet" type="text/css">
+    
+    <!-- Add jQuery library for Highlight Function -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"
+	type="text/javascript"></script>
+	<script src="../js/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+	<!-- site wrapper starts -->
+
+
+	<div id="wrapper">
+		<div id="header">
+			<form action="" id="search" method="get" name="search">
+				<input id="text-search" maxlength="120" name="q" placeholder=
+				"Search our website" size="40" type="text">
+			</form>
+			<a href="../index.html" id="logo"></a>
+
+			<div id="banner">
+				<p>M25 Cobham Services</p>
+			</div>
+
+
+			<div id="topnav">
+				<ul>
+					<li style="background-image:url(../images/btnHome.png);">
+						<a href="../index.html">Home</a>
+					</li>
+
+
+					<li>
+						<a href="accommodation.html">Accommodation</a>
+					</li>
+
+
+					<li>
+						<a href="facilities.html">Facilities</a>
+					</li>
+
+
+					<li>
+						<a href="find_us.html">Find Us</a>
+					</li>
+
+
+					<li>
+						<a href="contact_us.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="ColMainContent2">
+        <h3>Thank You for your visit!<br>For further queries, please feel free to get in touch with us by filling out the form below. 
+        We may also welcome any kind of feedback. </h3>
+    
+    
+        <div id="form-main">
+            <div id="form-div">
+                <form class="form" id="form1" name="form1" action="MAILTO:info@cobhamservicestation.co.uk" method="post" enctype="text/plain">
+                    
+                    <p class="name">
+                    <input class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" id="name" name="name" placeholder="Name" type="text">
+                    </p>
+    
+                    <p class="email">
+                    <input class="validate[required,custom[email]] feedback-input" id="email"name="email" placeholder="Email" type="text">
+                    </p>
+    
+                    <p class="text">
+                    <textarea class="validate[required,length[6,300]] feedback-input" id="comment"name="text" placeholder="Message"></textarea>
+                    </p>
+    
+                    <div class="submit">
+                    <input id="button-blue" type="submit" value="SEND">
+    
+                    <div class="ease"></div>
+                        
+                    </div>
+                    
+                </form>
+             </div>
+        </div>
+        </div>
+    </div>
+    
+	<!-- site wrapper ends -->
+
+	<div id="footer">
+		<div id="footer-inner-left">
+			<p>&copy;2014 Motorway Services Online, All Rights Reserved.<br>
+			Website By: Andrea Enning</p>
+		</div>
+
+
+		<div id="footer-inner-right">
+          <h2>Follow us on:</h2>    
+          <a href="http://www.youtube.com/user/HighwaysAgency/search?query=M25" title="Highways Agency - M25 Video Documentation" target="_blank">
+          <div class="Youtube">
+          </div>
+          </a> 
+          <a href="https://twitter.com/search/?q=%23M25" title="Twitter #M25" target="_blank">
+          <div class="Twitter">
+          </div>
+          </a> 
+          <a href="https://www.facebook.com/pages/Cobham-Services/478668838833682" title="Facebook Official Page" target="_blank">
+          <div class="Facebook">
+          </div>
+          </a> 
+          <a href="https://foursquare.com/v/extra-services-cobham/5124aa63d63e8c99b7feb9ac" title="Fourquare - Discover New Places" target="_blank">
+          <div class="Foursquare">     
+          </div>
+          </a> 
+          <a href="https://plus.google.com/117530011481998598526/about" title="Google+ - Days Inn Cobham M25" target="_blank">
+          <div class="GooglePlus">
+          </div>
+          </a>
+		</div>
+	</div>
+	<script src="../js/highlight.js" type="text/javascript"></script> 
+<!-- Javascript to clear search box's text when the field is clicked etc -->
+	 <script type="text/javascript">
+	$(function () {
+			$('#text-search').bind('keyup change', function (ev) {
+				// pull in the new value
+				var searchTerm = $(this).val();
+
+				// remove any old highlighted terms
+				$('body').removeHighlight();
+
+				// disable highlighting if empty
+				if (searchTerm) {
+					// highlight the new term
+					$('body').highlight(searchTerm);
+				}
+			});
+		});
+	</script>
+</body>
+</html>
